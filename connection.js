@@ -7,7 +7,7 @@ const db = mysql.createConnection({
     host: "127.0.0.1",
     user: process.env.MYSQL_USERNAME,
     password: process.env.MYSQL_PASSWORD,
-    database: "coba-express",
+    database: process.env.MYSQL_DATABASE
 })
 
 module.exports = db
